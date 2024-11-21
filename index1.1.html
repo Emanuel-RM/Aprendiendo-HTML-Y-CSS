@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .centrarenvertical{display:flex;align-items: center;}  
+        #radios{margin-left: 145px;}        
+        .etiquetas{display: inline-block; width:420px}  
+        #pregunta{width:180px;height:120px;}             
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inscripción a Competencia Escolar</h1>
+    <p>Usa este Formulario de Inscripción a Competencia Escolar para expresar tu intención de participar en la competencia que sea de tu interés. Los organizadores te contactarán para confirmar tu participación y para responder tus preguntas, si es que tienes alguna.</p>
+    <p>Por favor, confirma tu intención de participar en una competencia escolar mediante la colocación de tu firma en el formulario. </p>
+
+    <form action="#">       
+    <label for="name" class="etiquetas">Nombre completo*:</label>
+    <input type="text" id="name" required>
+    <br />
+    <br />
+    <label for="course" class="etiquetas">Curso/Grado*:</label>
+    <input type="text" id="course" required>
+    <br />
+    <br />
+    <label for="birthdate" class="etiquetas">Fecha de nacimiento*:</label>
+    <input type="date" id="birthdate" required>
+    <br />
+    <br />
+    <div class="centrarenvertical">
+
+    <label for="competencia">Competición en la que quieres participar*:</label>            
+
+    <div id="radios">
+
+    <input type="radio" name="competencia" id="Atletismo" value="Atletismo"  >
+    <label for="Atletismo">Atletismo</label>
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="Deletreo" value="Deletreo"  >
+    <label for="Deletreo">Deletreo</label>            
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="olimpiadasmatematicas" value="Olimpiadas matemáticas"  >
+    <label for="olimpiadasmatematicas">Olimpiadas matemáticas</label>
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="arte" value="Arte"  >
+    <label for="arte">Arte</label>
+
+    </div>
+    </div>
+
+    <br />
+    <br />
+    <label for="docente" class="etiquetas">Docente que te prepara para la competición*:</label>
+    <input type="text" id="docente" required>
+    <br />
+    <br />
+    <label for="telefono" class="etiquetas">Teléfono al que puedes ser contactado*:</label>
+    <input type="tel" id="telefono" placeholder="809-364-7485" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <br />
+    <br />       
+    <label for="contacto" class="etiquetas">Persona de contacto*:</label>
+    <input type="text" id="contacto" required>
+    <br />
+    <br />      
+    <label for="contactotel" class="etiquetas">Teléfono de persona de contacto*:</label>
+    <input type="tel" id="contactotel" placeholder="849-987-3415" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <br />
+    <br /> 
+
+    <div  class="centrarenvertical">       
+    <label for="pregunta" class="etiquetas">¿Tienes alguna pregunta para los organizadores?</label>
+    <textarea id="pregunta"></textarea> 
+    </div>
+
+    <br />
+    <br /> 
+    <input type="submit">
+
+    </form>
+</body>
+</html>

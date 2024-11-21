@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo1.css">
+    <link rel="stylesheet" href="stilo2.css">
+    <link rel="import" href="index1.1.html" >
+    <title>EXPORT X</title>
+    <style>
+        .centrarenvertical{display:flex;align-items: center;}  
+        #radios{margin-left: 145px;}        
+        .etiquetas{display: inline-block; width:420px}  
+        #pregunta{width:180px;height:120px;} 
+        .hola{ border: 2px solid black ;
+            border-color: rgb(0, 0, 0);
+            border-collapse: collapse;}
+        body{
+            background-color: rgb(176, 206, 206);}
+        .hola2{
+            border: 5px solid;
+            border-collapse: collapse;
+            border-color: rgb(7, 7, 7);
+                   }
+         
+    </style>
+
+</head>
+
+<body>
+    <header>
+     <a href="#" class="logo">
+
+        <img src="hola/hola.png" alt="Logo de la empresa">
+
+        <h2 class="nombre-empresa">Export X</h2>
+     </a>
+
+     <nav>
+        <a href="" class="nav link">Inicio</a>
+        <a href="" class="nav link">Competencias</a>
+        <a href="" class="nav link">Sobre Nosotros</a>
+        <a href="" class="nav link">Contactanos</a>
+        
+     </nav>
+
+    </header>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Enlaces</h3>
+                    <ul>
+                      <li><a href="#">inicio</a></li>
+                      <li><a href="#">Sobre Nosotros</a></li>
+                      <li><a href="#">Competencias</a></li>
+                      <li><a href="#">Conctatanos</a></li>
+
+                    </ul>
+                </div>
+                                 
+               <div class="col">
+                 <h3>Conctatanos</h3>
+                 <p>Direccion: Esperanza valverde, barrio juaquin balaguer calle 12 </p>
+                 <p> telefono: +1 (829) 367 26** </p>
+                 <p>Email: exportx@esport.com </p>
+               </div>
+
+              <div class="col">
+                 <h3>Owners</h3>
+                 <p>Emanuel Rodriguez</p>
+                 <p>sammy Rodriguez</p>
+                 <p>Welinton Rodriguez</p>
+              </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <center><h1 class="hola">Formulario de Inscripción a Competencia Escolar</h1></center>
+    <p>Usa este Formulario de Inscripción a Competencia Escolar para expresar tu intención de participar en la competencia que sea de tu interés. Los organizadores te contactarán para confirmar tu participación y para responder tus preguntas, si es que tienes alguna.</p>
+    <p>Por favor, confirma tu intención de participar en una competencia escolar mediante la colocación de tu firma en el formulario. </p>
+
+    <form action="#">       
+    <label for="name" class="etiquetas">Nombre completo*:</label>
+    <input type="text" id="name" required>
+    <br />
+    <br />
+    <label for="course" class="etiquetas">Curso/Grado*:</label>
+    <input type="text" id="course" required>
+    <br />
+    <br />
+    <label for="birthdate" class="etiquetas">Fecha de nacimiento*:</label>
+    <input type="date" id="birthdate" required>
+    <br />
+    <br />
+    <div class="centrarenvertical">
+
+    <label for="competencia">Competición en la que quieres participar*:</label>            
+
+    <div id="radios">
+
+    <input type="radio" name="competencia" id="Atletismo" value="Atletismo"  >
+    <label for="Atletismo">Atletismo</label>
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="Deletreo" value="Deletreo"  >
+    <label for="Deletreo">Deletreo</label>            
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="olimpiadasmatematicas" value="Olimpiadas matemáticas"  >
+    <label for="olimpiadasmatematicas">Olimpiadas matemáticas</label>
+    <br />
+    <br />
+    <input type="radio" name="competencia" id="arte" value="Arte"  >
+    <label for="arte">Arte</label>
+
+    </div>
+    </div>
+
+    <br />
+    <br />
+    <label for="docente" class="etiquetas">Docente que te prepara para la competición*:</label>
+    <input type="text" id="docente" required>
+    <br />
+    <br />
+    <label for="telefono" class="etiquetas">Teléfono al que puedes ser contactado*:</label>
+    <input type="tel" id="telefono"  required>
+    <br />
+    <br /> 
+    <label for="Correo" class="etiquetas">Correo Electronico para enviarte mas informacion*</label>
+    <input type="email" id="Correo" required>
+    <br>
+    <br>      
+    <label for="contacto" class="etiquetas">Persona de contacto*:</label>
+    <input type="text" id="contacto" required>
+    <br />
+    <br />      
+    <label for="contactotel" class="etiquetas">Teléfono de persona de contacto*:</label>
+    <input type="tel" id="contactotel"  required>
+    <br />
+    <br /> 
+
+    <div  class="centrarenvertical">       
+    <label for="pregunta" class="etiquetas">¿Tienes alguna pregunta para los organizadores?</label>
+    <textarea id="pregunta"></textarea> 
+    </div>
+
+    <br />
+    <br /> 
+    <input class="hola2" type="submit">
+
+    </form>
+</body>
+
+</html>
